@@ -10,7 +10,7 @@ function App() {
 
   return (
     <SkeletonTheme baseColor="#202020" highlightColor="#444">
-      <BrowserRouter>
+      <BrowserRouter basename="/skeleton-loading/">
         <Routes>
           <Route
             path="/"
