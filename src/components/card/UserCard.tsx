@@ -8,7 +8,7 @@ export const UserCard = ({ user }: any) => {
   const content = (
     <div
       className="card"
-      onClick={() => navigate(`/skeleton-loading/users/${user.id}`)}
+      onClick={() => navigate(`skeleton-loading/users/${user.id}`)}
     >
       <div className="card-content">
         <div className="card-left">
