@@ -1,0 +1,18 @@
+.skeleton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 25rem;
+  margin-bottom: -5rem;
+  &-circle {
+    width: 4rem;
+    height: 4rem;
+  }
+  &-left {
+    margin-right: 2rem;
+  }
+  &-right {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+}

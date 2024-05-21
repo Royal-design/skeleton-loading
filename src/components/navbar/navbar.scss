@@ -1,0 +1,12 @@
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: all 0.4s;
+  &.active {
+    color: red;
+  }
+}

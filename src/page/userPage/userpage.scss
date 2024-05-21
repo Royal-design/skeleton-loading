@@ -1,0 +1,14 @@
+.userdata {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-skeleton {
+    width: 20rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.profile {
+  margin-top: 2rem;
+  text-align: center;
+}
