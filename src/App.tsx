@@ -19,7 +19,7 @@ function App() {
             }
           />
           <Route
-            path="/users/:id"
+            path="/skeleton-loading/users/:id"
             element={
               <UserPage users={users} isLoading={isLoading} error={error} />
             }
