@@ -12,7 +12,7 @@ type user = {
   email: string;
   company: CompanyType;
 };
-type UsersType = {
+export type UsersType = {
   users: user[];
   isLoading: boolean;
   error: any;

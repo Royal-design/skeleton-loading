@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const delay = () => new Promise((res) => setTimeout(() => res(), 1800));
+const delay = () => new Promise<void>((res) => setTimeout(() => res(), 1800));
 export const api = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com"
 });

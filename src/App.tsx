@@ -7,7 +7,6 @@ import { UseContextHook } from "./hook/UseContextHook";
 
 function App() {
   const { isLoading, users, error } = UseContextHook();
-  // const { data: users, isLoading, error } = useSWR(endpoint, getUsers);
 
   return (
     <SkeletonTheme baseColor="#202020" highlightColor="#444">

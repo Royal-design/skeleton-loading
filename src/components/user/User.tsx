@@ -1,18 +1,10 @@
 import { UserCard } from "../card/UserCard";
-// import { endpoint } from "../../Api/api";
-// import { getUsers } from "../../Api/api";
-// import useSWR from "swr";
+import { UsersType } from "../../page/userPage/UserPage";
+
 import { SkeletonUser } from "../skeleton/SkeletonUser";
 import "./user.scss";
-type UserType = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  phone: string;
-};
-export const User = ({ users, isLoading, error }) => {
-  // const { data: users, isLoading, error } = useSWR(endpoint, getUsers);
+
+export const User = ({ users, isLoading, error }: UsersType) => {
   console.log(users);
 
   const content = (
@@ -21,8 +13,9 @@ export const User = ({ users, isLoading, error }) => {
         [...Array(10).keys()].map((i) => {
           return <SkeletonUser key={i} />;
         })}
+      {error && <p>{error.message}</p>}
       {users &&
-        users.map((user: UserType) => {
+        users.map((user) => {
           return <UserCard key={user.id} user={user} />;
         })}
     </div>
