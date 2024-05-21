@@ -6,10 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const UserCard = ({ user }: any) => {
   const navigate = useNavigate();
   const content = (
-    <div
-      className="card"
-      onClick={() => navigate(`skeleton-loading/users/${user.id}`)}
-    >
+    <div className="card" onClick={() => navigate(`users/${user.id}`)}>
       <div className="card-content">
         <div className="card-left">
           <figure className="card-figure ">
