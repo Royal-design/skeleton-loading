@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { SkeletonTheme } from "react-loading-skeleton";
 import { HomePage } from "./page/homepage/HomePage";
 import { UserPage } from "./page/userPage/UserPage";
@@ -10,22 +10,20 @@ function App() {
 
   return (
     <SkeletonTheme baseColor="#202020" highlightColor="#444">
-      <BrowserRouter basename="/skeleton-loading/">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <HomePage users={users} isLoading={isLoading} error={error} />
-            }
-          />
-          <Route
-            path="/users/:id"
-            element={
-              <UserPage users={users} isLoading={isLoading} error={error} />
-            }
-          />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomePage users={users} isLoading={isLoading} error={error} />
+          }
+        />
+        <Route
+          path="/users/:id"
+          element={
+            <UserPage users={users} isLoading={isLoading} error={error} />
+          }
+        />
+      </Routes>
     </SkeletonTheme>
   );
 }
