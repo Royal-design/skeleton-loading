@@ -3,15 +3,16 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./userpage.scss";
 
-type CompanyType = {
+export type CompanyType = {
   name: string;
 };
-type user = {
+export type user = {
   name: string;
   id: number;
   email: string;
   company: CompanyType;
 };
+
 export type UsersType = {
   users: user[];
   isLoading: boolean;

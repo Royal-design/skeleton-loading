@@ -1,10 +1,9 @@
 import { Navbar } from "../../components/navbar/Navbar";
 import { User } from "../../components/user/User";
-
-type UserType = object;
+import { user } from "../userPage/UserPage";
 
 type PropsType = {
-  users: UserType[];
+  users: user[];
   isLoading: boolean;
   error: any;
 };
